@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+
+}
+*root{
+    --second-bg-color: darkslategrey;
+    --text-color:white;
+}
+
+
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color:var(--second-bg-color);
+    color:var(--text-color);
+    font-size: x-large;
+    background-image: url(/Images/D-Huhu.png);
+    height: 100vh;
+    background-repeat: no no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+}
+.navbar a:hover,
+.navbar a.Active{
+    color:rgb(112, 195, 216);
+
+}
+.hamburger{
+    display: none;
+    height:fit-content;
+    cursor: pointer;
+    padding:3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin-right: 6px 0;
+}
+    
+
+
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+
+
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+.Home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+
+}
+.Home-content{
+    max-width:60rem;
+}
+.Home-content h1{
+    color: gold;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.Home-content h3{
+    color:gold;
+    font-size: 2.5rem;
+}
+
+.Home-content p{
+    color:gold;
+    font-size: 1.8rem;
+}
+
+
+     
+.Home-content.Text-animate{
+    position: relative;
+    width: 30rem;
+
+}
+.Home-content.Text-animate h3{
+    font-size: 5rem;
+    font-weight: 650;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+}
+
+
+.Home-content p{
+    color: gold;
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+    max-width: 400px;
+}
+
+.btn{
+    align-items:center;
+    font-size: 15px;
+    left: 0;
+    right: 20rem;
+    bottom: 1rem;
+    padding: 15px 30px;
+    margin: 30px;
+    border: none;
+    outline:none;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left:0;
+    top: 0;
+    border-radius: 10px;
+}
+/*time to make it glow*/
+.btn::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+         #00FFD5 , #002BFF , #FF00C8 ,#FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 40%0 0;}
+    100%{background-position: 0 0;}
+}
+/*hover*/
+.btn:hover::before{
+    opacity:1;
+}
+.btn:active:after{
+    background: transparent;
+}
+.btn:active{
+    color: #000;
+    font-weight: bold;
+
+}
+    
+.home-sci{
+    position: absolute;
+    bottom: 1rem;
+    width:170px;
+    right: 20rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2rem solid var(--main-color);
+    border-radius: 50%;
+    
+}
+
+#facebook-btn{
+    font-size: 50px;
+    display: inline-block;
+    color:#5890FF;
+    font-size: 50px;
+    position: fixed;
+    right:25rem;
+    bottom: 4rem;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+#gmail-btn{
+    font-size: 50px;
+    display: inline-block;
+    font-size: 50px;
+    position: fixed;
+    right:18rem;
+    bottom: 4rem;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+#instagram-btn{
+    font-size: 50px;
+    display: inline-block;
+    font-size: 50px;
+    position: fixed;
+    right:11rem;
+    bottom: 4rem;
+    padding:24px;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+.WhatsApp-btn-container{
+    font-size: 50px;
+    position: fixed;
+    right:25px;
+    bottom: 24px;
+    padding:24px;
+    
+}
+.WhatsApp-btn-container.whatsapp-btn{
+    color:#25d366;
+}
+

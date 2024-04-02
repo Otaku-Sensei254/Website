@@ -1,0 +1,109 @@
+body{
+    background-color:var(--second-bg-color);
+    color:var(--text-color);
+    font-size: x-large;
+    background-image: url(/Images/D-Huhu.png);
+    height: 100vh;
+    background-repeat: no no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 5rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+
+
+.navbar a{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 50;
+    margin-left: 3.2em;
+    transition: 2.5s;
+}
+.navbar a:hover,
+.navbar a.Active{
+    color:rgb(112, 195, 216);
+}
+
+#facebook-btn{
+    font-size: 50px;
+    display: inline-block;
+    color:#5890FF;
+    font-size: 50px;
+    position: fixed;
+    right:25rem;
+    bottom: 4rem;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+#gmail-btn{
+    font-size: 50px;
+    display: inline-block;
+    font-size: 50px;
+    position: fixed;
+    right:18rem;
+    bottom: 4rem;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+#instagram-btn{
+    font-size: 50px;
+    display: inline-block;
+    font-size: 50px;
+    position: fixed;
+    right:11rem;
+    bottom: 4rem;
+    padding:24px;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius:3px;
+    border: none;
+    cursor: pointer;
+}
+.WhatsApp-btn-container{
+    font-size: 50px;
+    position: fixed;
+    right:25px;
+    bottom: 24px;
+    padding:24px;
+    
+}
+.WhatsApp-btn-container.whatsapp-btn{
+    color:#25d366;
+}
+

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 200px; /* Set the width of your logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
